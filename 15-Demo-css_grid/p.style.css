@@ -1,0 +1,95 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container {
+width: 70%;
+height: 80%;
+background-color: pink;
+margin: auto;
+margin-top:5% ;
+display: grid;
+/* 1 fr ~ 1 fraction */
+/* grid-template-columns: 1fr 3fr 1fr; */
+/* grid-template-columns: 200px 3fr 1fr */
+
+/* grid-template-columns: 50% auto 1fr; */
+/* grid-template-columns: repeat(3,1fr); */
+/* grid-template-columns: 1fr 5f 1fr;
+grid-template-rows: repeat(5, 1fr); */
+grid-template-columns: 1fr 5f 1fr;
+grid-template-rows: 120px auto 80px 120px 120px;
+/* 
+row-gap: 30px;
+column-gap: 10px; */
+
+gap : 10px 10px;
+
+/* area: chỉ định trên lưới là */
+grid-template-areas: 
+"header header header header"
+"navigation navigation navigation navigation"
+"tab1 tab2 tab3 tab4"
+"maincontent maincontent maincontent Banner1"
+"maincontent maincontent maincontent Banner2";
+
+}
+.container div {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 3em;
+}
+.item-1{
+    background-color: hotpink;
+    /* grid-column: 1/4; */
+    grid-area: header;
+
+
+}
+.item-2{
+    background-color: red;
+    /* grid-row: 2/4; */
+    grid-area: navigation;
+  
+}
+.item-3{
+   background-color: blue;
+   grid-area: tab1;
+ 
+}
+.item-4{
+   background-color: slateblue;
+   grid-area: tab2;
+ 
+}
+.item-5 {
+    background-color: yellow;
+    grid-area: tab3;
+  
+}
+.item-6 {
+    background-color: greenyellow;
+    grid-area: tab4;
+  
+}
+.item-7 {
+    background-color: brown;
+    grid-area: maincontent;
+  
+}
+.item-8 {
+    background-color: blueviolet;
+    grid-area:Banner1 ;
+  
+}
+.item-9 {
+    background-color: greenyellow;
+    grid-area: Banner2;
+  
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tóm tắt</title>
+<style>
+    p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+p.one {
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
+
+p.two {
+    border-style: solid;
+    border-width: medium;
+    border-color: green;
+}
+
+p.three {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+p.four {
+    border-style: dotted;
+    border-width: thick;
+}
+
+p.five {
+    border-style: double;
+    border-width: 15px;
+}
+
+p.six {
+    border-style: double;
+    border-width: thick;
+}
+
+p.seven {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    border-color: red green blue yellow;
+}
+body {
+    background-image: url("https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2021/05/01170243/a2-1.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 200px;
+    background-attachment: fixed;
+}
+h1{
+    background-color: red;
+}
+h2{
+    background-color: green;
+}
+</style>
+</head>
+<body>
+    <p>
+        p {
+            color: red;
+            /* Đây là chú thích trên một dòng */
+            text-align: center;
+        }
+        
+        /* Đây là
+        một chú thích
+        trên nhiều dòng */
+    </p>
+    <ol>
+        <li>
+            Khai báo trực tiếp ở thẻ HTML (Inline style sheet)
+        </li>
+        <li>
+            Khai báo trong thẻ <b>style</b> của tài liệu HTML (Internal style sheet)
+            <br>
+           <ol>
+            <b>Bộ chọn phần tử</b>
+           </ol>
+           <p>  <b style="color: red;">p</b>  {
+            text-align: center;
+            color: red;
+        } </p>
+           <ol>
+           <b> Bộ chọn id</b>
+        </ol>
+        <p>
+           <b style="color: red;">#para1</b>  {
+                text-align: center;
+                color: red;
+            }
+        </p>
+        <ol>
+           <b>Bộ chọn class</b> 
+        </ol>
+        <p><b style="color: red;">.center</b> {
+            text-align: center;
+            color: red;
+        }
+    </p>
+        </li>
+        <li>
+            Khai báo trong file .css riêng biệt (External style sheet)
+           <br> Thẻ <b>link</b> được đặt ở trong thẻ <b>head</b> của tài liệu HTML.
+        </li>
+    </ol>
+
+<h1>
+    Kiểu đường viền
+</h1>
+<h2>Sử dụng thuộc tính border-style</h2>
+<p>Đường viền sẽ xuất hiện dưới đây tùy theo giá trị của thuộc tính border-style:</p>
+
+<p class="dotted">Đường viền là các dấu chấm.</p>
+<p class="dashed">Đường viền là các nét đứt.</p>
+<p class="solid">Đường viền nét liền đơn.</p>
+<p class="double">Đường viền đôi.</p>
+<p class="groove">Đường viền dạng xẻ rãnh.</p>
+<p class="ridge">Đường viền dạng gờ nổi.</p>
+<p class="inset">Đường viền dạng khung ảnh chìm.</p>
+<p class="outset">Đường viền dạng khung ảnh nổi.</p>
+<p class="none">Không có đường viền.</p>
+<p class="hidden">Đường viền ẩn.</p>
+<p class="mix">Đường viền hỗn hợp.</p>
+
+<h2>Chiều rộng đường viền</h2>
+<h2>Sử dụng thuộc tính border-width</h2>
+<p>Thuộc tính này dùng để xác định độ rộng của các đường viền:</p>
+
+<p class="one">Hà Nội mùa thu.</p>
+<p class="two">Hà Nội mùa thu.</p>
+<p class="three">Hà Nội mùa thu.</p>
+<p class="four">Hà Nội mùa thu.</p>
+<p class="five">Hà Nội mùa thu.</p>
+<p class="six">Hà Nội mùa thu.</p>
+<p class="seven">Hà Nội mùa thu.</p>
+
+<h2>Sử dụng thuộc tính border-color</h2>
+<p>Thuộc tính này dùng để chỉ định màu sắc cho các đường viền.</p>
+
+<p class="one">Đường viền nét liền màu đỏ</p>
+<p class="two">Đường viền nét liền màu xanh</p>
+<p class="three">Đường viền nét liền nhiều màu</p>
+<p><b>Lưu ý:</b> Thuộc tính "border-color" không có tác dụng nếu sử dụng nó mà không dùng kèm thuộc tính "border-style" để thiết lập kiểu đường viền trước đó.</p>
+
+
+<h1>Hình ảnh được Fixed và thanh Scroll</h1>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+<p>The background-image is fixed. Try to scroll down the page.</p>
+
+<p><i style="color: red;">Khi sử dụng thuộc tính rút gọn, thứ tự của các giá trị tương ứng với các thuộc tính là:</i></p>
+<ul>
+    <li>
+        background-color
+    </li>
+    <li>
+        background-image
+    </li>
+    <li>
+        background-repeat
+    </li>
+    <li>
+        background-attachment
+    </li>
+    <li>
+        background-position
+    </li>
+</ul>
+
+<p> shift + !  => sẽ mở ra html5 luôn</p>
+<p></p>
+
+
+</body>
+</html>
